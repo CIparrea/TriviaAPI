@@ -6,10 +6,8 @@ import chalk from "chalk";
 const insertData = async () => {
    
     await db.dropDatabase()
-
     await Question.create(data)
     console.log(chalk.greenBright("Questions Created!"))
-
     await db.close()
 
 }
